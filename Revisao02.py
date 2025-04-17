@@ -2,8 +2,8 @@
 
 #alterar o arquivo, pondo repetição
 num = 1
-mensagem = " "
-while num != 0:
+mensagem = "S"
+while mensagem == "S" or mensagem == "s":
     num = int(input("Digite um numero qualquer: "))
     if num % 2 == 0 and num < 0:
         print("Par e Negativo")
@@ -14,5 +14,8 @@ while num != 0:
     elif num % 2 != 0 and num > 0:
         print("Impar e Positivo")
     print("----------------------")
-    print(" DIGITE 0 PARA SAIR ")
-    print("----------------------")
+    mensagem = input("Tem outro numero para verificar?\n"
+                     "S - CONTINUAR\n"
+                     "N - SAIR\n"
+                     ": ")
+
